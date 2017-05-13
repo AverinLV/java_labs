@@ -1,5 +1,6 @@
 package lab5;
 
+//измененная лабораторная 1 без использования Scanner
 public class lab1 {
 	  static int nod;
 	  
