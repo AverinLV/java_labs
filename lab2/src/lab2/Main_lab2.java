@@ -28,7 +28,6 @@ public class Main_lab2 {
 			    	}
 			      
 			    	for (int i=0;i<obj.length;i++){
-			    		//System.out.println(obj[i]);
 			    		((Creature) obj[i]).my_number(i);
 			    		obj[i].whoami();
 			    		
