@@ -160,7 +160,7 @@ public class Main extends JFrame implements ActionListener {
         } catch (ClassNotFoundException ex) {
             ex.printStackTrace();
         }
-        /* Turn off metal's use of bold fonts */
+
         UIManager.put("swing.boldMetal", Boolean.FALSE);
         javax.swing.SwingUtilities.invokeLater(new Runnable() {
             public void run() {
