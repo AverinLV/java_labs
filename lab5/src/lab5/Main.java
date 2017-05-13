@@ -72,9 +72,9 @@ public class Main extends JFrame implements ActionListener {
     
 	public void actionPerformed(ActionEvent arg0) {
 		String ac = arg0.getActionCommand();
-        String texts = input.getText();        
+        	String texts = input.getText();        
         
-		if (ac == "lab1" || ac == "insert") {
+		if (ac == "lab1") {
 			text.setText(null);
 
 			if (three == -1) text.append("Insert 3 numbers" + "\n");
@@ -101,11 +101,11 @@ public class Main extends JFrame implements ActionListener {
 				runClient(1);
 			}
 			else if (one != -1) two = Integer.parseInt(texts);
-	        else if (one == -1) one = Integer.parseInt(texts);
+	        	else if (one == -1) one = Integer.parseInt(texts);
 
 			//text.setText(null);
-	        text.append(texts + "\n");
-	        input.selectAll();
+	        	text.append(texts + "\n");
+	        	input.selectAll();
 			}
 			catch (NumberFormatException ex)
 			{
@@ -122,7 +122,7 @@ public class Main extends JFrame implements ActionListener {
             public void run() {
                 String[] args1={"12"};
                 try {
-                	if (num==1)	{
+                	if (num==1) {
                 		lab1.main(one, two, three);
                 		one = -1;
                 		two = -1;
