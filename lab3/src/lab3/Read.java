@@ -16,7 +16,7 @@ public void run() {
 for (int i = 1; i <= cycle_arg; i++) {
 	
         synchronized (monitor) {
-        	System.out.println(Thread.currentThread().getName() + " read " + Write.num);
+            System.out.println(Thread.currentThread().getName() + " read " + Write.num);
             monitor.notify();
             try {
                 if (i < cycle_arg)
