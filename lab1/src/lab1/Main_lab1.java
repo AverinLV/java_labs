@@ -7,10 +7,12 @@ public class Main_lab1 {
  
   public static void main (String[]  args) {
      
+   //Вводим 3 числа в консоли
       Scanner s= new Scanner(System.in);
       int [] a = new  int [3];
       for(int i=0;i<a.length;i++) {
     	  
+   //Проверяем явлеется ли введенный символ числом    
     	  if(s.hasNextInt()){
     		   a[i]=s.nextInt();
     		}else{
@@ -26,6 +28,8 @@ public class Main_lab1 {
       System.out.println("GCD of " +a[0]+ " , " +a[1]+ " , " +a[2]+ " = " +nod);
     
       }
+ 
+  //Вычисление НОД
          static int gcd(int a, int b, int c) {
          if(c==0) return a;
          else if (b==0) return gcd(c,b,a%c);
